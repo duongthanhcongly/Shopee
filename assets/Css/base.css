@@ -3,6 +3,7 @@
    --white-color: #fff;
    --black-color:#000;
    --text-color:#333;
+   --border-color: #dbdbdb;
 }
 *{
     box-sizing: inherit;
@@ -51,8 +52,43 @@ opacity: 1;
 .modal__content{
     margin: auto;
     position: relative;
-    background-color: var(--white-color);
-
+   
     z-index: 1;
-    border-radius: 5px;
+  
 }
+/* button common */
+.btn{
+    height: 34px;
+    min-width: 142px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+}
+.btn.btn--normal:hover{
+background-color: rgba(0, 0, 0, 0.05);
+}
+.btn--size-s{
+    font-size: 12px;
+    height: 32px;
+    padding: 0 8px ;
+}
+
+.btn.btn--primary{
+    color:var(--white-color);
+        background-color: var(--primary-color);
+}
+.btn.btn--disable{
+    color: #949494;
+    background-color: #c3c3c3;
+    cursor: default;
+}
+
