@@ -76,3 +76,6 @@ function showForm_log(){
     // đổi 
     divdk.style.display="none";
 }
+function directional(){
+    location.assign("./home.html")
+}
