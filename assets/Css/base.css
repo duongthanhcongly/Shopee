@@ -89,9 +89,7 @@ html {
 .modal.open{
   display: flex;
 }
-.js-hiddendangky.hddangky{
-  display: none;
-}
+
 .modal__overlay {
   position: absolute;
   height: 100%;
