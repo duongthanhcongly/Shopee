@@ -40,7 +40,39 @@ function onDangky(){
   function onDangNhap(){
     var divdk=document.getElementById("divdangky");
     var divdn=document.getElementById("divdangnhap");
-    divdn.style.display="block";
+    divdn.style.display="block";  
+    // đổi 
     divdk.style.display="none";
     
+}
+function showForm(){
+    const modal = document.querySelector(".js-modal");
+    modal.classList.add("open")
+}
+function hide(){
+    const modal = document.querySelector(".js-modal");
+    modal.classList.remove("open")
+}
+function bub(event){
+    event.stopPropagation();
+}
+// check form
+
+function showForm_sign(){
+    const modal = document.querySelector(".js-modal");
+    modal.classList.add("open");
+    var divdk=document.getElementById("divdangky");
+    var divdn=document.getElementById("divdangnhap");
+    divdn.style.display="none";  
+    // đổi 
+    divdk.style.display="block";
+}
+function showForm_log(){
+    const modal = document.querySelector(".js-modal");
+    modal.classList.add("open");
+    var divdk=document.getElementById("divdangky");
+    var divdn=document.getElementById("divdangnhap");
+    divdn.style.display="block";  
+    // đổi 
+    divdk.style.display="none";
 }
